@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submitparam"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rg_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_type"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen18sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rg_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <RadioButton
+                        android:id="@+id/rb_installation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_legacy_accnono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:checked="true"
+                        android:text="@string/legacy_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_meter_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:text="@string/meter_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sequence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:text="@string/sequence"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:text="@string/phone_number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sequence_w"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:text="@string/sequence_w"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <RadioButton
+                        android:id="@+id/rb_ca_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen15dp"
+                        android:text="@string/ca_no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen18sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/account_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg_option"
+                android:padding="@dimen/_10sdp">
+
+                <EditText
+                    android:id="@+id/et_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_gray_frame_white_solid"
+                    android:hint="@string/enter_details"
+                    android:padding="@dimen/_10sdp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/submitparam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_10sdp">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor2"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"></Button>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

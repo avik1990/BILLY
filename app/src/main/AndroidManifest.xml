@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tpcodl.billingreading">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".BillingReadingApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo_1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/logo_1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.UpdateTPCODLBillAppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SafetyInformationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UploadActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"></activity>
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".broadcasts.DialogGPS"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication" />
+        <activity
+            android:name=".broadcasts.DialogInternet"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.UserValidationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BluetoothActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.LandingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BaseMeterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.SBMBillingDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.FUCDENRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.NPDCRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SearchDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.NonSBMBillingDashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.MeterOkNonSbmReading"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.MeterOKMMRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.NMNVMBRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.PLTLWLSPNABLRemarksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.remark.NDPPGBMHOBMUSBRemarksActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.viewcaptureddata.ViewCapturedDataActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ReportNSBMActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SetUpDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SetPrinterTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BTPrinterSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SetPaperRollActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.SetUpCameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.GPSTrackingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.DownloadActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.viewcaptureddata.ViewDataActivityReadMode"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+
+
+        <activity
+            android:name=".activity.printReceipt.BillPrintActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintAnalogicNewThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintAmigoThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintPhiThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintAnalogicImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintAmigoImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintSoftlandImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintEpsonThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintAnalogicThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.BillPrintSBM"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.BillingCalculation"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.ReportDashBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.printReceipt.ReportPrintActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintAmigoImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintAnalogicImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintAnalogicNewThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintAnalogicThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintEpsonThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintPhiThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReportPrintSoftlandImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.printReceipt.ReprintAnalogicNewThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlAmigoImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlAmigoThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlEpsonThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlPhiThermal"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlSBM"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.printReceipt.ReprintBlSoftlandImpact"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.MassbillActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ConsolidatedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreenApplication"
+            android:windowSoftInputMode="stateHidden" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorSplash">#0394fc</color>
+    <color name="colorYellow">#fcf403</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="color_loginbg_n">#f74d36</color>
+    <color name="but_bg_color_active">#f64c35</color>
+    <color name="line_color">#ABABAB</color>
+    <color name="primaryColor2">#3F51B5</color>
+    <color name="forgot_password">#E70A25</color>
+    <color name="change_password">#FF0000</color>
+    <color name="button_color">#6183c3</color>
+    <color name="textBack">#c6d2e9</color>
+
+</resources>

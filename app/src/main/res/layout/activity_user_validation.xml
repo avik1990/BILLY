@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserValidationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:text="1.0.1"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rr_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlversion"
+        android:padding="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_iamge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/konark_wheel"
+            android:textColor="@color/colorWhite" />
+
+
+        <ImageView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@+id/iv_iamge"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/logo"
+            android:text="@string/tpcodl"
+            android:textColor="@color/colorWhite" />
+
+        <EditText
+            android:id="@+id/edit_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rounded_corner_gray_frame_white_solid"
+            android:hint="@string/phone_number"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="@dimen/_10sdp" />
+
+        <Button
+            android:id="@+id/button_validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_mobile"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dimen15dp"
+            android:background="#2364ad"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+</RelativeLayout>

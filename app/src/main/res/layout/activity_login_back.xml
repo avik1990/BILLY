@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/primaryColor2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_detail_param"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/ic_launcher"
+        android:layout_marginBottom="@dimen/dimen20sp"
+        android:padding="@dimen/dimen10dp">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_detail_param"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen10dp">
+
+
+        <EditText
+            android:id="@+id/edit_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:maxLength="10"
+            android:hint="@string/phone_number"
+            android:background="@drawable/rounded_corner_gray_frame_white_solid"
+            android:padding="@dimen/dimen10dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edit_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corner_gray_frame_white_solid"
+            android:layout_below="@+id/edit_user_id"
+            android:hint="@string/password"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:padding="@dimen/dimen10dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/submit_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_detail_param"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="@dimen/login_width_qualifier"
+            android:layout_height="wrap_content"
+            android:background="@color/line_color"
+            android:textColor="@color/colorWhite"
+            android:layout_marginEnd="@dimen/dimen5dp"
+            android:visibility="gone"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="@dimen/login_width_qualifier"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/button_register"
+            android:background="@color/color_loginbg_n"
+            android:textColor="@color/colorWhite"
+            android:text="@string/login"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/forgot_psw_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_param"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/dimen10dp">
+
+        <TextView
+            android:id="@+id/text_forgot_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/forgot_password"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

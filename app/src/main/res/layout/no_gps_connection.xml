@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/no_internet_bg">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/no_gps"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonOkDialog"
+        android:id="@+id/imgIcon"
+        android:layout_marginTop="30dp"></ImageView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to GPS settings"
+        android:id="@+id/btnGoToSettings"
+        android:layout_below="@+id/imgIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorBlack"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No GPS"
+        android:layout_marginLeft="30dp"
+        android:textSize="40dp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/txtMessage1">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connection"
+        android:layout_marginLeft="30dp"
+        android:textSize="50dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:id="@+id/txtConnection"
+        android:layout_below="@+id/txtMessage1">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please check your GPS and enable it to continue"
+        android:layout_marginLeft="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:id="@+id/txtPleaseCheck"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/txtConnection">
+    </TextView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:layout_below="@+id/txtPleaseCheck"
+        android:id="@+id/buttonOkDialog"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="20dp">
+
+    </Button>
+
+</RelativeLayout>

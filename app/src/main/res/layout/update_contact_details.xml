@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_param"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40dp"
+        android:background="@color/primaryColor2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/update_contact_details"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"></TextView>
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/old_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_param"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/old_mobile_no"
+        android:inputType="number"
+        android:maxLength="10"></EditText>
+
+    <EditText
+        android:id="@+id/new_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/old_mobile_no"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="@string/update_mobile_no"
+        android:inputType="number"
+        android:maxLength="10" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_mobile_no"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/color_loginbg_n"
+            android:text="Cancel"
+            android:textColor="@color/colorWhite" />
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/color_loginbg_n"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

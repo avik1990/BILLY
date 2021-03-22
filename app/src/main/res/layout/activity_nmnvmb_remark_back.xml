@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_param"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/elt_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/elt_on"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_elt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/yes"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"></RadioButton>
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/status_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/elt_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/supply_status"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+                <Spinner
+                    android:id="@+id/status_spinner"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""></Spinner>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/status_spinner"
+                    android:layout_alignParentRight="true"
+                    android:background="#999999"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usag_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/status_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/usage"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+                <Spinner
+                    android:id="@+id/uses_spinner"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""></Spinner>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/uses_spinner"
+                    android:layout_alignParentRight="true"
+                    android:background="#999999"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/meter_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/usag_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/meter_type"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+                <Spinner
+                    android:id="@+id/meter_type_spinner"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""></Spinner>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/meter_type_spinner"
+                    android:layout_alignParentRight="true"
+                    android:background="#999999"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sequence_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/meter_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/rg_sequence_param"
+                    android:text="@string/walking_sequence_correct"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+
+                <RadioGroup
+                    android:id="@+id/rg_sequence_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/yes"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"></RadioButton>
+
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/location_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sequence_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/rg_meter_param"
+                    android:text="@string/meter_location"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/rg_meter_param"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/inside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/inside"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/outside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/outside"></RadioButton>
+
+
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/supply_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/location_param"
+                android:padding="@dimen/dimen20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/reason_of_nv"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"></TextView>
+
+                <Spinner
+                    android:id="@+id/reason_nv_spinner"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""></Spinner>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/reason_nv_spinner"
+                    android:layout_alignParentRight="true"
+                    android:background="#999999"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/info_param"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/supply_param"
+                android:padding="@dimen/dimen20dp">
+
+                <EditText
+                    android:id="@+id/additional_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen120dp"
+                    android:hint="@string/additional_info"></EditText>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/image_param"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_param"
+                android:padding="@dimen/dimen20dp">
+
+                <Button
+                    android:id="@+id/meter_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/meter_photo"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"></Button>
+
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/submit_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/dimen20dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/primaryColor2"
+            android:text="@string/submit"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"></Button>
+
+
+    </RelativeLayout>
+</RelativeLayout>

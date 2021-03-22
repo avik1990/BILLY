@@ -1,0 +1,428 @@
+<resources>
+    <string name="access_issue">Access not granted. Connect with Admin.</string>
+    <string name="app_name">TPCODL Billing</string>
+    <string name="tpcodl">TPCODL</string>
+    <string name="welcomeText">Welcome to</string>
+    <string name="smrd_mobile_application">Spot Billing/Reading Application</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number/User ID</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="signup">SignUp</string>
+    <string name="alreadyHaveAccount">Already have an account?</string>
+    <string name="signin">SignIn</string>
+    <string name="singup">Sing Up</string>
+    <string name="user_profile">User Profile</string>
+    <string name="save">Save</string>
+    <string name="address">Address</string>
+    <string name="cancel">Retry</string>
+    <string name="safety_tip_one">Are You Carrying your I-card?</string>
+    <string name="safety_tip_two">Are You Wearing Proper Uniform?</string>
+    <string name="safety_tip_three">Are You Carrying your helmet if going on 2 wheeler?</string>
+    <string name="safety_tip_four">Are you carrying RRI?</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="printer">Setup</string>
+    <string name="gallery">Gallery</string>
+    <string name="add_photo_">Add Photo!</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_library">Choose from Library</string>
+    <string name="cap_c_cancel">Cancel</string>
+    <string name="permissions">Permission</string>
+    <string name="txt_follow">Follow</string>
+    <string name="allow_camera_storage_permission">Please allow required camera and storage permission to add profile picture</string>
+    <string name="no_internet_connection">Seems there is no internet connectivity, please connect to internet and try again!</string>
+    <string name="enter_phone_number">Please enter phone number.</string>
+    <string name="enter_email">Please enter Email.</string>
+    <string name="enter_password">Please enter Password.</string>
+    <string name="enter_address">Please enter Address.</string>
+    <string name="version">2.0.9</string>
+
+    <string name="forgot_password_hint">Enter Registered Email ID</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="login_title">Login</string>
+    <string name="user_validation_title">User Registration</string>
+    <string name="safety_validation_title">Safety Check</string>
+    <string name="spot_billing">SPOT BILLING </string>
+    <string name="bill_distribution">Non SBM Meter Reading</string>
+    <string name="quality_check">QUALITY CHECK</string>
+    <string name="theft">THEFT</string>
+    <string name="feedback_suggetion">CONSUMER FEEDBACK/SUGGESTION</string>
+    <string name="extra_connection">EXTRA CONNECTION</string>
+    <string name="download_file">Download</string>
+    <string name="landing_title">Home Menu</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="old_mobile_no">Old Contact No.</string>
+    <string name="update_mobile_no">New Contact No.</string>
+    <string name="update_contact_details">Update Contact Details.</string>
+    <string name="change_password">Change Password</string>
+    <string name="billing">BILLING</string>
+    <string name="reports">Reports</string>
+    <string name="upload_data_i_p">UPLOAD DATA(O/P)</string>
+    <string name="download_data_i_p">DOWNLOAD DATA(I/P)</string>
+    <string name="set_up">SET UP</string>
+    <string name="paper_feed">PAPER FEED</string>
+    <string name="choose_one_option">Choose One Option</string>
+    <string name="account_no">Installation No.</string>
+    <string name="sequence">Sequence</string>
+    <string name="sequence_w">Sequence (W)</string>
+    <string name="base_reading">Base Reading</string>
+    <string name="revisit">Revisit</string>
+    <string name="search">Search</string>
+    <string name="np">NP</string>
+    <string name="pl">PL</string>
+    <string name="installation_no">Installation No.</string>
+    <string name="ca_no">CA NO.</string>
+    <string name="legacy_no">Legacy Account No.</string>
+    <string name="building_desc">Building Desc.</string>
+    <string name="building_code">Building Code</string>
+    <string name="pole_number">Pole Number</string>
+    <string name="flag">Flag</string>
+    <string name="meter_no">Meter No.</string>
+    <string name="mru">MRU</string>
+    <!--<string name="special_remark">Special Remark/Mtr. Sts</string>-->
+    <string name="special_remark">Mtr. Sts</string>
+    <string name="consumer_name_address">Consumer Name/Address</string>
+    <string name="mr_note">Mr Note</string>
+    <string name="new_meter_number">New Meter Number</string>
+    <string name="old_meter_correction">Old Meter Correction</string>
+    <string name="enter_meter_number">Enter Meter Number</string>
+    <string name="readings">Readings:</string>
+    <string name="kwh">KWH</string>
+    <string name="kw">KW</string>
+    <string name="elt_on">ELT ON:</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="supply_status">Supply Status</string>
+    <string name="usage">Usage</string>
+    <string name="meter_type">Meter Type</string>
+    <string name="walking_sequence_correct">Walking Sequence Correct</string>
+    <string name="meter_location">Meter Location</string>
+    <string name="inside">Inside</string>
+    <string name="outside">Outside</string>
+    <string name="additional_info">Additional Info</string>
+    <string name="paper_bill_stop">Paper Bill Stop</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="meter_photo">Meter Photo</string>
+    <string name="site_photo">Site Photo</string>
+    <string name="upload_tester_photo">Upload Tester Photo</string>
+    <string name="update">Update Details</string>
+    <string name="reason_of_nv">Reason Of NV</string>
+    <string name="source_of_supply">Source Of Supply</string>
+    <string name="reason_of_cd">Reason Of CD</string>
+    <string name="reason_of_ed">Reason Of ED</string>
+    <string name="search_data">Search Details</string>
+    <string name="billing_dashbpard">Spot Billing Dashboard</string>
+    <string name="biling_details">Billing Details</string>
+    <string name="remark">Remarks</string>
+    <string name="reason_of_dc">Reason of DC</string>
+    <string name="reason_of_en">Reason of EN</string>
+    <string name="house_photo">House Photo</string>
+    <string name="meter_stuck">Meter Stuck</string>
+    <string name="paper_pasted_by">Paper Pasted By</string>
+    <string name="meter_height">Meter Height Feet</string>
+    <string name="obstacle">Type Of Obstacle</string>
+    <string name="water_loging">Water Logging Photo</string>
+
+    <string name="contact">Contact</string>
+    <string name="rri_photo">RRI Photo</string>
+    <string name="enter_details">Enter Details</string>
+    <string name="details_type">Select Details Type</string>
+    <string name="meter_reading">Meter Reading</string>
+    <string name="enter_kwh">Enter KWh</string>
+    <string name="enter_kvah">Enter Kvah</string>
+    <string name="enter_kvarh">Enter Kvarh</string>
+    <string name="enter_md_peak">Enter MD Peak</string>
+    <string name="enter_md_off_peak">Enter MD Off Peak</string>
+    <string name="enter_tod">Enter TOD</string>
+    <string name="enter_colony_consumption">Enter Colony Consumption</string>
+
+    <string name="rri_image">RRI Image</string>
+    <string name="reason_of_pl">Reason of PL</string>
+    <string name="paper_pasted">Paper Pasted</string>
+
+    <string name="meter_height_feet">Meter Height feet</string>
+    <string name="unsafe_condition">Unsafe Condition</string>
+    <string name="type_of_obstacle">Type of Obstacle</string>
+    <string name="seal_status">Seal Status</string>
+    <string name="ok_meter_string">OK Meter</string>
+    <string name="bl_remarks_stringmm_remark">MM REMARK</string>
+    <string name="np_remarks_string">NP REMARKS</string>
+    <string name="dc_remarks_string">DC REMARKS</string>
+    <string name="nm_remarks">NM REMARKS</string>
+    <string name="mb_remarks">MB REMARKS</string>
+    <string name="nv_remarks">NV REMARKS</string>
+    <!--<string name="pl_remarks_string">PL REMARKS</string>-->
+    <string name="pl_remarks_string">HL REMARKS</string>
+    <string name="tl_remarks">TL REMARKS</string>
+    <string name="bl_remarks_string">BL REMARKS</string>
+    <string name="wl_remarks_string">WL REMARKS</string>
+    <string name="na_remarks_string">NA REMARKS</string>
+    <string name="sp_remarks_string">SP REMARKS</string>
+    <string name="fu_remarks_string">FU REMARKS</string>
+    <string name="en_remarks_string">EN REMARKS</string>
+    <string name="cd_remarks">CD REMARKS</string>
+    <string name="nd_remarks_string">ND REMARKS</string>
+    <string name="pp_remarks">PP REMARKS</string>
+    <string name="gb_remarks">GB REMARKS</string>
+    <string name="mh_remarks_string">MH REMARKS</string>
+    <string name="ob_remarks_string">OB REMARKS</string>
+    <string name="mu_remarks">MU REMARKS</string>
+    <string name="sb_remarks">SB REMARKS</string>
+    <string name="msg_nodata">Data Not Available</string>
+    <string name="msg_datasaved">Data Captured Successfully</string>
+    <string name="msg_failed">Please Try Again</string>
+    <string name="mobile_validation">Mobile number must be of 10 digit.</string>
+    <string name="invalid_mobile">Entered Mobile number is not valid.</string>
+    <string name="incorrect_credential">Invalid credentials!. Seems either userId or password is incorrect.</string>
+    <string name="enter_mobile_number">Please enter the mobile number</string>
+    <string name="non_sbm_billing_dashbpard">NON-SBM Billing Dashboard</string>
+    <string name="counsumner_phone_no">Consumer Phone No.</string>
+    <string name="update_phone_no">Update Phone No.</string>
+    <string name="msg_mobile_updated">Mobile No. is updated</string>
+    <string name="msg_error">Something went wrong!!</string>
+    <string name="msg_old_mobile_matches">Old Mobile No. Doesn\'t Matches</string>
+    <string name="msg_new_mobile">Enter new mobile no</string>
+    <string name="msg_old_mobile">Enter old mobile no.</string>
+    <string name="total_cons_load">Total Cons. Load:</string>
+    <string name="total_mtr_reading_not_taken">Total Mtr reading not taken:</string>
+    <string name="total_mtr_reading_taken">Total Mtr reading taken:</string>
+    <string name="report_details">Report Details</string>
+    <string name="bill_house_lock">Bill House Lock</string>
+    <string name="get_gps_co_ordinate">GET GPS CO-ORDINATE</string>
+    <string name="camera_setup_check">Camera SetUP Check</string>
+    <string name="scan_bluetooth_device">Scan Bluetooth Device</string>
+    <string name="update_app">Update App</string>
+    <string name="paper_roll_type">Paper Roll Type</string>
+    <string name="printer_setup">Printer SetUp</string>
+    <string name="printer_set_up_for_n_softland_impact_printer">Printer set up for:</string>
+    <string name="please_select_printer_for_reset">Please select printer for reset</string>
+
+    <string name="please_select_paper_for_reset">Please select paper for reset</string>
+    <string name="set_printer">Set Printer</string>
+    <string name="set_paper_roll_type">SET PAPER ROLL TYPE</string>
+    <string name="by_default_pre_printer_paper_roll">Paper Roll set up for:</string>
+    <string name="download_from_server">Download From Server</string>
+    <string name="download_from_local">Download From Local</string>
+    <string name="toal_record_downloaded">Total Record Downloaded:</string>
+    <string name="download_activity_title">DOWNLOAD ACTIVITY</string>
+    <string name="upload_to_server">Upload To Server</string>
+    <string name="upload_activity">UPLOAD ACTIVITY</string>
+    <string name="Yes">Ok</string>
+    <string name="Cancel">cancel</string>
+    <string name="total_record_received">Total Record Received:</string>
+    <string name="total_record_inserted">Total Record Inserted:</string>
+    <string name="total_record_failed">Total Record Failed:</string>
+    <string name="something_wrong">Something went wrong!!</string>
+    <string name="from">FROM</string>
+    <string name="arrers_msg">Data not Uploaded.Plz upload data manually after printing of bill</string>
+
+    <string-array name="usage">
+        <item>Select Usage</item>
+        <item>Shop</item>
+        <item>House</item>
+        <item>Factory</item>
+        <item>Godown</item>
+        <item>Industry</item>
+        <item>Other</item>
+        <item>Religious Place</item>
+        <item>School</item>
+        <item>Hospital</item>
+        <item>Institution</item>
+    </string-array>
+
+    <string-array name="meterType">
+        <item>Select Meter Type</item>
+        <item>Electronic</item>
+        <item>Counter</item>
+        <item>Mechanical</item>
+        <item>Smart Meter</item>
+    </string-array>
+
+    <string-array name="supplyStatus">
+        <item>Select Supply Status</item>
+        <item>Less In Use</item>
+        <item>In Use</item>
+        <item>Not In Use</item>
+    </string-array>
+
+    <string-array name="overrideqclogic">
+        <item>NO</item>
+        <item>YES</item>
+    </string-array>
+
+
+    <!--
+        <string-array name="meterStatus">
+            <item>OK-Normal Readings</item>
+            <item>MM-Meter Number Mismatch</item>
+            <item>NP-NO Power Cases</item>
+            <item>DC-Disconnected Cases</item>
+            <item>NM-NO Meter</item>
+            <item>PL-Permanent Locked</item>
+            <item>TL-Temporary Locked</item>
+            <item>BL-Meter Box/Cabin Locked</item>
+            <item>NV-Reading Not Visible/Clear</item>
+            <item>MB-Meter Burnt</item>
+            <item>FU-Figure Upset</item>
+            <item>EN-Entry Not Allowed</item>
+            <item>ND-No Display</item>
+            <item>PP-Paper Pasted</item>
+            <item>GB-Glass Broken</item>
+            <item>MH-Meter Position Height/Low</item>
+            <item>NA-Address Not Available</item>
+            <item>OB-Obstacle For Meter Reading</item>
+            <item>SP-Sealed Premises</item>
+            <item>WL-Water Logging</item>
+            <item>SB-Seal Broken</item>
+            <item>MU- Meter Unsafe</item>
+        </string-array>
+    -->
+
+    <string-array name="meterStatus">
+        <item>OK-Normal Readings</item>
+        <item>MM-Meter Number Mismatch</item>
+        <item>NP-NO Power Cases</item>
+        <item>DC-Disconnected Cases</item>
+        <item>NM-NO Meter</item>
+        <item>HL-House Locked</item>
+        <item>BL-Meter Box/Cabin Locked</item>
+        <item>NV-Reading Not Visible/Clear</item>
+        <item>MB-Meter Burnt</item>
+        <item>FU-Figure Upset</item>
+        <item>EN-Entry Not Allowed</item>
+        <item>ND-No Display</item>
+        <item>PP-Paper Pasted</item>
+        <item>GB-Glass Broken</item>
+        <item>MH-Meter Position Height/Low</item>
+        <item>NA-Address Not Available</item>
+        <item>OB-Obstacle For Meter Reading</item>
+        <item>SP-Sealed Premises</item>
+        <item>WL-Water Logging</item>
+        <item>SB-Seal Broken</item>
+        <item>MU- Meter Unsafe</item>
+    </string-array>
+
+
+    <string-array name="reasonofDC">
+        <item>Select Reason DC</item>
+        <item>Unsafe Condition at Site</item>
+        <item>Consumer not living in premise not in use.</item>
+        <item>Site demolished</item>
+        <item>Site under construction</item>
+        <item>Disconnected From pole</item>
+        <item>Disconnected From Meter/Bus Bar</item>
+    </string-array>
+
+    <string-array name="sourceofsupply">
+        <item>Select Source of Supply</item>
+        <item>Supply Bypass</item>
+        <!--<item>Supply Bypass by zone</item>-->
+        <!--<item>Other Meter</item>-->
+        <!--<item>No Supply</item>-->
+        <item>Direct Theft from bus bar</item>
+        <item>Direct Theft from Pole</item>
+    </string-array>
+
+    <string-array name="reasonofNV">
+        <item>Select Reason NV</item>
+        <item>Meter Drop inside the Box</item>
+        <item>Box Dirty</item>
+        <item>Sunlight</item>
+        <item>Unsafe condition</item>
+        <item>Unclear Glass</item>
+    </string-array>
+
+    <string-array name="reasonofCD">
+        <item>Select Reason CD</item>
+        <item>Freedom Unit Damage</item>
+        <item>Service line broken</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="reasonofEN">
+        <item>Select Reason EN</item>
+        <item>No male member at home</item>
+        <item>Recently Reading done</item>
+        <item>Key not available</item>
+        <item>Late evening reading not allowed</item>
+        <item>Suspected Consumer</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="meterstuck">
+        <item>Select Meter Stuck</item>
+        <item>Low Voltage</item>
+        <item>888888</item>
+        <item>Tamper</item>
+        <item>Stop at MDI</item>
+        <item>Blank Display</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="paperpastedby">
+        <item>Select Paper Pasted</item>
+        <item>Zone</item>
+        <item>EAC</item>
+        <item>CEG</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--
+        <string-array name="meterheightfeet">
+            <item>Select Meter Height</item>
+            <item>8 to 12 ft</item>
+            <item>12 to 16 ft</item>
+            <item>16 to 20 ft</item>
+            <item>More Than 20 ft</item>
+        </string-array>
+    -->
+
+    <string-array name="meterheightfeet">
+        <item>Select Meter Height</item>
+        <item>6 to 8 ft</item>
+        <item>8 to 10 ft</item>
+        <item>More Than 10 ft</item>
+    </string-array>
+
+
+    <string-array name="typeofobstacle">
+        <item>Select Obstacle Type</item>
+        <item>Boxes blocked the way</item>
+    </string-array>
+
+    <string-array name="sealstatus">
+        <item>Select Seal Status</item>
+        <item>Seal Broken</item>
+        <item>No Seal</item>
+    </string-array>
+
+    <string-array name="contactReason">
+        <item>Select Contact Reason</item>
+        <item>Wrong Contact</item>
+        <item>Out of Reach</item>
+        <item>Switched OFF</item>
+    </string-array>
+
+    <string-array name="reasonPL">
+        <item>Select PL Reason</item>
+        <item>Appointment Fixed After 3 Days</item>
+        <item>Whatsapp Reading</item>
+        <item>Reading  Tomorrow</item>
+        <item>Sat/Sun/Holiday/After 6 PM and Early Morning</item>
+        <item>Tenant/ON Rent</item>
+        <item>Key not available</item>
+        <item>Village/Out of resident</item>
+        <item>Occasionally Open</item>
+        <item>Weekly off</item>
+        <item>Meter inside but wire disconnected from pole</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.remark.NMNVMBRemarkActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_nm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_elt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_elt_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen10dp"
+                        android:text="@string/elt_on"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_elt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen10dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <RadioButton
+                            android:id="@+id/rg_elt_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/yes"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rg_elt_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/no"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16sp"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_supply_status_nm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:text="@string/supply_status"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_elt"
+                    app:layout_goneMarginTop="@dimen/dimen10dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_status_nm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen40dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_elt"
+                    app:layout_goneMarginTop="@dimen/dimen10dp" />
+
+                <View
+                    android:id="@+id/view_status"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    app:layout_constraintEnd_toEndOf="@+id/spinner_status_nm"
+                    app:layout_constraintStart_toStartOf="@+id/spinner_status_nm"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_status_nm"
+                    app:layout_goneMarginTop="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tv_usage_status_nm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:text="@string/usage"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_status" />
+
+                <Spinner
+                    android:id="@+id/spinner_usage_nm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dimen40dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginEnd="@dimen/dimen15dp"
+                    android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/guideline3"
+                    app:layout_constraintTop_toBottomOf="@+id/view_status" />
+
+                <View
+                    android:id="@+id/view_usage"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="#999999"
+                    app:layout_constraintEnd_toEndOf="@+id/spinner_usage_nm"
+                    app:layout_constraintStart_toStartOf="@+id/spinner_usage_nm"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_usage_nm" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_meter_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view_usage">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3_meter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+                    <TextView
+                        android:id="@+id/tv_meter_type"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        android:text="@string/meter_type"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3_meter"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Spinner
+                        android:id="@+id/spinner_meter_type"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dimen40dp"
+                        android:layout_marginTop="@dimen/dimen10dp"
+                        android:layout_marginEnd="@dimen/dimen15dp"
+                        android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline3_meter"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view_meter_type"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:background="#999999"
+                        app:layout_constraintEnd_toEndOf="@+id/spinner_meter_type"
+                        app:layout_constraintStart_toStartOf="@+id/spinner_meter_type"
+                        app:layout_constraintTop_toBottomOf="@+id/spinner_meter_type" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_sequence_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:text="@string/walking_sequence_correct"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_meter_type"
+                    app:layout_goneMarginTop="@dimen/dimen10dp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sequence_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tv_sequence_nm"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_meter_type"
+                    app:layout_goneMarginTop="@dimen/dimen10dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_seq_nm_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen10dp"
+                        android:text="@string/yes"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_seq_nm_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tv_meter_loc_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:text="@string/meter_location"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rg_sequence_nm" />
+
+                <RadioGroup
+                    android:id="@+id/rg_meter_location_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rg_sequence_nm">
+
+                    <RadioButton
+                        android:id="@+id/rb_meter_loc_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen10dp"
+                        android:text="@string/inside"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rb_meter_loc_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/outside"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dimen16sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/rg_meter_location_nm"
+
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_supply"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline_nm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+
+                        <TextView
+                            android:id="@+id/tv_source_supply_nm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen10dp"
+                            android:text="@string/source_of_supply"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline_nm"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Spinner
+                            android:id="@+id/spinner_source_supply_nm"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dimen40dp"
+                            android:layout_marginEnd="@dimen/dimen10dp"
+                            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                            android:text=""
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/guideline_nm"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view_res_status_nm"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            app:layout_constraintEnd_toEndOf="@+id/spinner_source_supply_nm"
+                            app:layout_constraintStart_toStartOf="@+id/spinner_source_supply_nm"
+                            app:layout_constraintTop_toBottomOf="@+id/spinner_source_supply_nm" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_reason_nv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guideline_nv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_res_nv_status"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen10dp"
+                            android:text="@string/reason_of_nv"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dimen16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/guideline_nv"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Spinner
+                            android:id="@+id/spinner_res_nv"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dimen40dp"
+                            android:layout_marginEnd="@dimen/dimen10dp"
+                            android:dropDownSelector="@drawable/ic_baseline_arrow_drop_down_24"
+                            android:text=""
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/guideline_nv"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view_nv"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:background="#999999"
+                            app:layout_constraintEnd_toEndOf="@+id/spinner_res_nv"
+                            app:layout_constraintStart_toStartOf="@+id/spinner_res_nv"
+                            app:layout_constraintTop_toBottomOf="@+id/spinner_res_nv" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <EditText
+                    android:id="@+id/et_add_info_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen80dp"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:background="@drawable/rounded_corner_gray_frame_white_solid"
+                    android:gravity="top|start"
+                    android:hint="@string/additional_info"
+                    android:inputType="textMultiLine"
+                    android:paddingStart="@dimen/dimen10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/cl_spinner" />
+
+                <TextView
+                    android:id="@+id/tv_title_image_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:text="@string/meter_photo"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/dimen16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_add_info_nm"
+                    app:layout_goneMarginTop="@dimen/dimen20sp" />
+
+                <ImageView
+                    android:id="@+id/iv_image_cap_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen100dp"
+                    android:layout_marginStart="@dimen/dimen10dp"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginEnd="@dimen/dimen10dp"
+                    android:src="@drawable/dotted_rectangle"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title_image_nm"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_upload_nm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_cloud_upload_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_image_cap_nm"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_image_cap_nm"
+                    app:layout_constraintStart_toStartOf="@+id/iv_image_cap_nm"
+                    app:layout_constraintTop_toTopOf="@+id/iv_image_cap_nm" />
+
+
+                <!--  <Button
+                      android:id="@+id/btn_submit"
+                      android:layout_width="match_parent"
+                      android:layout_height="@dimen/dimen50dp"
+                      app:layout_constraintTop_toBottomOf="@+id/iv_image_cap_nm"
+                      android:layout_marginBottom="@dimen/dimen10dp"
+                      android:layout_marginStart="@dimen/dimen20sp"
+                      android:layout_marginEnd="@dimen/dimen20sp"
+                      android:layout_marginTop="@dimen/dimen20sp"
+                      android:background="@color/but_bg_color_active"
+                      android:text="@string/submit"
+                      android:textColor="@color/colorWhite"
+                      />-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp"
+        android:layout_marginStart="@dimen/dimen20sp"
+        android:layout_marginTop="@dimen/dimen20sp"
+        android:layout_marginEnd="@dimen/dimen20sp"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

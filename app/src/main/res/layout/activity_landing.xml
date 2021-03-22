@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LandingActivity">
+
+    <include
+        android:id="@+id/tv_toolbar"
+        layout="@layout/toolbar"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/user_title_param"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_toolbar"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimen20sp">
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Mr. X"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dimen20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_title_param">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/btnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen10dp">
+
+                <Button
+                    android:id="@+id/btn_spot_billing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/spot_billing"
+                    android:textColor="@color/colorWhite"></Button>
+
+                <Button
+                    android:id="@+id/btn_non_sbm_reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_spot_billing"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/bill_distribution"
+                    android:textColor="@color/colorWhite"></Button>
+
+                <Button
+                    android:id="@+id/quality_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_non_sbm_reading"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/quality_check"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone"></Button>
+
+                <Button
+                    android:id="@+id/theft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/quality_check"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/theft"
+                    android:textColor="@color/colorWhite"
+
+                    android:visibility="gone"></Button>
+
+                <Button
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/theft"
+                    android:layout_marginTop="@dimen/dimen15dp"
+
+                    android:background="@color/primaryColor2"
+                    android:text="@string/feedback_suggetion"
+                    android:textColor="@color/colorWhite"
+                    android:visibility="gone"></Button>
+
+                <Button
+                    android:id="@+id/extra_connection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feedback"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/extra_connection"
+                    android:textColor="@color/colorWhite"
+
+                    android:visibility="gone"></Button>
+
+
+                <Button
+                    android:id="@+id/edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/extra_connection"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/colorWhite"
+
+                    android:visibility="gone"></Button>
+
+                <Button
+                    android:id="@+id/printer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_profile"
+                    android:layout_marginTop="@dimen/dimen15dp"
+                    android:background="@color/primaryColor2"
+                    android:text="@string/printer"
+                    android:textColor="@color/colorWhite"></Button>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnView"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/TOTAL_SBM_CONSUMER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_SBM_BILL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_SBM_BILL_TO_UPLOAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_SBM_BILL_UPLOAD"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_NSBM_CONSUMER"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_NSBM_READ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_NSBM_READ_TO_UPLOAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorBlack"></TextView>
+
+                <TextView
+                    android:id="@+id/TOTAL_NSBM_READ_UPLOAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textColor="@color/colorBlack"></TextView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
